@@ -6,7 +6,7 @@
 /*   By: mganchev <mganchev@student.42london.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 21:54:55 by mganchev          #+#    #+#             */
-/*   Updated: 2025/03/25 23:33:15 by mganchev         ###   ########.fr       */
+/*   Updated: 2025/03/25 23:46:18 by mganchev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int Account::accounts = 0;
 int Account::total = 0;
 int Account::deposits = 0;
 int Account::withdrawals = 0;
-int Account::currentIndex = 0;
+int Account::currentIndex = -1;
 
 Account::Account(int initial_deposit)
 {
@@ -29,7 +29,7 @@ Account::Account(int initial_deposit)
     total += amount;
     std::cout << "index:" << this->index << ";"
               << "amount:" << this->amount << ";"
-              << "opened" << std::endl;
+              << "created" << std::endl;
 }
 
 Account::~Account()
@@ -54,7 +54,7 @@ void Account::makeDeposit(int deposit)
                << "p_amount:" << p_amount << ";"
                << "deposit:" << deposit << ";"
                << "amount:" << this->amount << ";"
-               << "nb_deposits" << this->nb_deposits << std::endl;
+               << "nb_deposits:" << this->nb_deposits << std::endl;
 }
 
 void    Account::makeWithdrawal(int withdrawal)
@@ -88,10 +88,10 @@ void    Account::displayStatus() const
               << "withdrawals:" << this->nb_withdrawals << std::endl;
 }
 
-void    Account::displayAccountsInfos() const
+void    Account::displayAccountsInfos()
 {
     std::cout << "accounts:" << accounts << ";"
               << "total:" << total << ";"
-              << "deposits" << deposits << ";"
-              << "withdrawals" << withdrawals << std::endl;
+              << "deposits:" << deposits << ";"
+              << "withdrawals:" << withdrawals << std::endl;
 }

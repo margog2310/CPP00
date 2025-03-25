@@ -6,7 +6,7 @@
 #    By: mganchev <mganchev@student.42london.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/25 21:54:40 by mganchev          #+#    #+#              #
-#    Updated: 2025/03/25 21:55:12 by mganchev         ###   ########.fr        #
+#    Updated: 2025/03/25 23:39:21 by mganchev         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,8 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 NAME = account
 
-SRCS = Account.cpp
+SRCS = Account.cpp \
+	   tests.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 

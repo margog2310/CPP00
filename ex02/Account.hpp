@@ -6,7 +6,7 @@
 /*   By: mganchev <mganchev@student.42london.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 21:55:02 by mganchev          #+#    #+#             */
-/*   Updated: 2025/03/25 23:20:12 by mganchev         ###   ########.fr       */
+/*   Updated: 2025/03/25 23:43:42 by mganchev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 class Account
 {
+    public:
+        typedef Account t;
     private:
         static int  accounts;
         static int  total;
@@ -32,5 +34,5 @@ class Account
         void    makeDeposit(int deposit);
         void    makeWithdrawal(int withdrawal);
         void    displayStatus() const;
-        void    displayAccountsInfos() const;
+        static void    displayAccountsInfos();
 };
