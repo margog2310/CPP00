@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mganchev <mganchev@student.42london.com    +#+  +:+       +#+        */
+/*   By: mganchev <mganchev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 19:34:14 by mganchev          #+#    #+#             */
-/*   Updated: 2025/03/25 22:39:08 by mganchev         ###   ########.fr       */
+/*   Updated: 2025/05/01 18:58:39 by mganchev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ class Contact
         std::string getDarkestSecret() const;
         bool isEmpty();
         void setAttributes();
+        bool stringValid(const std::string& text) const;
+        bool phoneValid(const std::string& phoneNo) const;
 };
 
 #endif

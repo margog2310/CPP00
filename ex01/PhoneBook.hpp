@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mganchev <mganchev@student.42london.com    +#+  +:+       +#+        */
+/*   By: mganchev <mganchev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 18:42:45 by mganchev          #+#    #+#             */
-/*   Updated: 2025/03/25 22:39:35 by mganchev         ###   ########.fr       */
+/*   Updated: 2025/05/01 18:39:10 by mganchev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ class PhoneBook
     public:
         void    add();
         void    search();
+        int getCurrentIndex();
 };
 
 #endif

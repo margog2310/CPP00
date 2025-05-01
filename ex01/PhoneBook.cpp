@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mganchev <mganchev@student.42london.com    +#+  +:+       +#+        */
+/*   By: mganchev <mganchev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 18:42:55 by mganchev          #+#    #+#             */
-/*   Updated: 2025/03/25 21:50:32 by mganchev         ###   ########.fr       */
+/*   Updated: 2025/05/01 18:40:13 by mganchev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 #include <cstdlib>
 
 int PhoneBook::currentIndex = 0;
+
+int PhoneBook::getCurrentIndex()
+{
+    return currentIndex;
+}
 
 void    PhoneBook::add()
 {
