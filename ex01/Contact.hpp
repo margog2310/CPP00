@@ -6,7 +6,7 @@
 /*   By: mganchev <mganchev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 19:34:14 by mganchev          #+#    #+#             */
-/*   Updated: 2025/05/01 18:58:39 by mganchev         ###   ########.fr       */
+/*   Updated: 2025/05/08 16:05:36 by mganchev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ class Contact
 
     public:
         Contact();
+        Contact& operator=(const Contact& copy);
         void setIndex(int index);
         int getIndex() const;
         std::string getFirstName() const;

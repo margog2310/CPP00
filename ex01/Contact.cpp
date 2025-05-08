@@ -6,13 +6,27 @@
 /*   By: mganchev <mganchev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 19:33:45 by mganchev          #+#    #+#             */
-/*   Updated: 2025/05/01 19:20:57 by mganchev         ###   ########.fr       */
+/*   Updated: 2025/05/08 16:07:18 by mganchev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
 
 Contact::Contact() : index(-1) {}
+
+Contact& Contact::operator=(const Contact& copy)
+{
+    if (this != &copy)
+    {
+        index = copy.index;
+        firstName = copy.firstName;
+        lastName = copy.lastName;
+        nickname = copy.nickname;
+        phoneNumber = copy.phoneNumber;
+        darkestSecret = copy.darkestSecret;   
+    }
+    return *this;
+}
 
 void    Contact::setIndex(int i)
 {

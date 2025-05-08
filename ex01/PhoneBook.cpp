@@ -6,7 +6,7 @@
 /*   By: mganchev <mganchev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 18:42:55 by mganchev          #+#    #+#             */
-/*   Updated: 2025/05/01 18:40:13 by mganchev         ###   ########.fr       */
+/*   Updated: 2025/05/08 16:13:21 by mganchev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ int main()
         else if (cmd == "SEARCH")
             newPhoneBook.search();
         else if (cmd == "EXIT")
-            exit(EXIT_SUCCESS);
+            return (0);
         else
             std::cout << "Invalid command. Try again.\n";
         std::cout << "\n";
